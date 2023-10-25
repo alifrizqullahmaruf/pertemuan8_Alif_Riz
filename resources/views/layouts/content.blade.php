@@ -24,7 +24,7 @@
           </p>
           <div class="button">
             <a href="https://wa.me/082111492113" class="btn">Say Hello</a>
-            <a href="#" class="btn2"
+            <a href="https://drive.google.com/file/d/1eDzy3vblPhltnst8Xd6VjpW-VB0RiI_m/view?usp=drive_link" class="btn2"
               ><span><i class="bx bx-play"></i></span>Watch My Work!</a
             >
           </div>

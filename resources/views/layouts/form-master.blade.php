@@ -12,13 +12,13 @@
 			font-family: 'Poppins', sans-serif !important;
 		}
 	</style>
-    <title>Fadhill Atmojo | @yield('title')</title>
+    <title>Alif Rizqullah Maruf | @yield('title')</title>
 </head>
 <body>
 	<div class="container d-flex justify-content-center align-items-center vh-100">
 		<div class="card w-75 rounded-4 p-2" style="box-shadow: 0px 5px 30px rgba(0, 0, 0, 0.1);">
 			<div class="card-body">
-			  	<h4 class="card-title text-center my-4">@yield('card-title')</h4>
+				<h4 class="card-title text-center my-4">@yield('card-title')</h4>
 				@yield('container')
 			</div>
 		</div>

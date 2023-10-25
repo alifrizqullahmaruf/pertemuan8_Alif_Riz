@@ -8,6 +8,10 @@ a{
     color: black !important;
 }
 
+body{
+    background-color: #7daaf3eb !important;
+}
+
 .container-native {
     display: flex;
     flex-direction: column;
@@ -99,8 +103,8 @@ nav ul li a.active::after {
 
 .btn_chat:hover {
     color: #fff;
-    background-image: url("../image/CTA2.png");
     height: 100%;
+    background-color: #0062ffeb;
 
     /* Center and scale the image nicely */
     background-position: center;
