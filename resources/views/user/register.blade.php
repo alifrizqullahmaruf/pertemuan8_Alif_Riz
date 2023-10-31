@@ -8,7 +8,7 @@
     Register
 @endsection
 
-{{--  section container  --}}
+{{--  section container  --}}	
 @section('container')
 	<form method="POST" action="{{ route('store') }}">
 		@csrf
@@ -21,7 +21,7 @@
 		</div>
 		<div class="mb-3">
 			<label for="email" class="form-label">Email address</label>
-			<input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" aria-describedby="emailHelp">
+			<input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" aria-describe>
 			<div id="emailHelp" class="form-text">We will never share your email with anyone</div>
 			@if ($errors->has('email'))
 				<span class="text-danger">{{ $errors->first('email') }}</span>

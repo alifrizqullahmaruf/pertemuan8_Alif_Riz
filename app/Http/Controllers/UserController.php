@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
+use App\Jobs\SendMailJob;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Cookie;
@@ -38,10 +39,16 @@ class UserController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
+        $data = [
+            'name' => $request->name,
+            'email' => $request->email
+        ];
+
+        dispatch(new SendMailJob($data));
         $credentials = $request->only('email', 'password');
         Auth::attempt($credentials);
         $request->session()->regenerate();
-        return redirect()->route('dashboard')->withSuccess('Kamu berhasil register dan telah login!');
+        return redirect()->route('dashboard') -> withSuccess('You have successfully registered & logged in!');;
     }
 
     public function login()
